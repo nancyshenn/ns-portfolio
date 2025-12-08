@@ -112,6 +112,7 @@ img{
   font-weight: var(--font-bold);
   margin-bottom: .25rem;
 }
+
 /*===== LAYOUT =====*/
 .bd-grid{
   max-width: 1024px;
@@ -399,7 +400,7 @@ img{
   grid-template-columns: 1fr max-content 1fr;
 }
 
-.education__year, .education__race{
+.education__year, .education__degree{
   font-size: var(--h3-font-size);
   margin-bottom: .25rem;
 }
@@ -409,7 +410,7 @@ img{
   font-size: var(--smaller-font-size);
 }
 
-.education__year, . .education__university{
+.education__year, .education__university{
   text-align: right;
 }
 
@@ -561,3 +562,89 @@ img{
 
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px){
+  .home__button{
+    width: initial;
+  }
+
+  .nav__menu{
+    width: var(--nav-width);
+  }
+  
+  .about__container,
+  .skills__container,
+  .projects__container{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about__data{
+    text-align: initial;
+  }
+
+  .about__description{
+    margin-bottom: var(--mb-5);
+  }
+
+  .about__img{
+    width: 220px;
+  }
+
+  .about__information{
+    padding-left: 4rem;
+  }
+
+  .education__time{
+    padding: 0 2rem; 
+  }
+  
+  .contact__inputs{
+    display:grid;
+    column-gap: 1.5rem;
+  }
+
+  .footer{
+    background: none;
+  }
+  
+  .footer__container{
+    background-color: var(--first-color-darken);
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  body{
+    margin:0;
+    padding-left: var(--nav-width);
+  }
+
+  .\31-header {
+    width: 0;
+  }
+
+  .nav__toggle, .nav__logo, .nav__close{
+    display: none;
+  }
+
+  .nav__menu{
+    left: 0;
+  }
+
+  .home__container{
+    height: 100vh;
+  }
+
+  .section{
+    padding: 3rem 0 2rem;
+  }
+
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects__container{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
