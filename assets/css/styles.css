@@ -302,6 +302,10 @@ img{
   align-items: stretch;
 }
 
+.about.section {
+  margin-bottom: 5rem;
+}
+
 .about__data{
   text-align: center;
 }
@@ -364,6 +368,7 @@ img{
   width: 320px;
   height: 320px;
   margin: 0;
+  margin-left: -4rem;
   justify-self: start;
   overflow: hidden;
   display: block;
@@ -411,6 +416,11 @@ img{
 }
 
 /* ===== SKILLS =====*/
+.skills.section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .skills__container{
   row-gap: 2rem;
 }
@@ -461,6 +471,11 @@ img{
 
 
 /* ===== WORKS =====*/
+
+.projects.section {
+  margin-top: 10rem;
+}
+
 .projects__container{
   justify-items: center;
   row-gap: 2rem;
@@ -536,7 +551,59 @@ img{
   cursor: pointer;
 }
 
+/* Hover effect for email address in contact box */
+.contact-box__text-email {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-box__text-email:hover {
+  color: var(--first-color);
+  text-decoration: underline;
+}
+
 /* ===== FOOTER =====*/
+
+/* ===== CONTACT BOX CUSTOM =====*/
+.contact-box {
+  margin: 2.5rem auto 0 auto;
+  padding: 1.5rem 2rem;
+  border: 1.5px solid #b1cfdd;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin-bottom: 5rem;
+}
+
+.contact-box__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.contact-box__icon {
+  font-size: 2rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* LinkedIn icon link hover */
+.contact-box__icon-linkedin {
+  color: #222;
+  transition: color 0.2s;
+}
+.contact-box__icon-linkedin:hover {
+  color: var(--first-color);
+}
 .footer{
   background-color: var(--first-color-darken);
   color: var(--first-color-lighten);
@@ -580,6 +647,7 @@ img{
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+  margin-bottom: 10rem;
 }
 
 /* ===== MEDIA QUERIES=====*/
