@@ -632,13 +632,13 @@ img{
 }
 
 .footer__social{
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer__link{
   display: inline-flex;
   color: var(--first-color);
-  margin-bottom: var(--mb-2);
+  margin-bottom: .5rem;
   font-size: 1.2rem;
   padding-right: .7rem;
   transition: .3s;
